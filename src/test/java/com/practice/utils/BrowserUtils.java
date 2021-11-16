@@ -29,7 +29,7 @@ public class BrowserUtils {
 	
 		String path = userPath + filePath;
 		
-		element.sendKeys(filePath);
+		element.sendKeys(path);
 	}
 
 

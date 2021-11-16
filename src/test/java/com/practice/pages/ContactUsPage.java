@@ -32,6 +32,9 @@ public class ContactUsPage {
 	@FindBy(css = "div[class='alert alert-danger'] > ol")
 	public WebElement errorMsgEmail;
 	
+	@FindBy(css = "p[class='alert alert-success']")
+	public WebElement successSentMsg;
+	
 	public ContactUsPage selectHeading(String str) {
 		Select select = new Select(selectSubJectHeading);
 		select.selectByVisibleText(str);
@@ -79,6 +82,11 @@ public class ContactUsPage {
 		String errorMsg = errorMsgEmail.getText();
 		
 		return errorMsg.equals("Invalid email address.");
+	}
+	
+	public ContactUsPage checkSuccessMessageSent() {
+		successSentMsg.isDisplayed();
+		return this;
 	}
 	
 	

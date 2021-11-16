@@ -47,9 +47,14 @@ public class SpotonAuotmationTest extends testBase{
 		String message = faker.address().fullAddress();
 		
 		
-		contactUsPage.selectHeading("Customer service").enterEmailAddress(invalidEml).typeMessage(message).clickSendBtn();
+		contactUsPage.selectHeading("Customer service")
+					 .enterEmailAddress(invalidEml)
+					 .typeMessage(message)
+					 .clickSendBtn();
 		contactUsPage.checkinvalidEmailAddErrorMessage();
-		contactUsPage.reEnterEmail(validEmail).uploadFileinto("src/test/resources/SpotOnImage.jpg").clickSendBtn();
+		contactUsPage.reEnterEmail(validEmail)
+						.uploadFileinto("\\src\\test\\resources\\SpotOnImage.jpg")
+						.clickSendBtn().checkSuccessMessageSent();
 		
 		
 	}
