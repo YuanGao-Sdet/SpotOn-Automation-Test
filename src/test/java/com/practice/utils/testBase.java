@@ -17,7 +17,7 @@ public class testBase {
 	@AfterTest
 	public void tearDown() {
 
-//		Driver.closeDriver();
+		Driver.closeDriver();
 	}
 
 }
