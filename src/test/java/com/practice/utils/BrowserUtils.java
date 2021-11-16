@@ -32,18 +32,6 @@ public class BrowserUtils {
 		element.sendKeys(filePath);
 	}
 
-	public static List<String> getElementsText(By locator) {
-
-		List<WebElement> elems = Driver.getDriver().findElements(locator);
-		List<String> elemTexts = new ArrayList<>();
-
-		for (WebElement el : elems) {
-			if (!el.getText().isEmpty()) {
-				elemTexts.add(el.getText());
-			}
-		}
-		return elemTexts;
-	}
 
 	public static void waitFor(int sec) {
 		try {

@@ -33,7 +33,7 @@ public class HomePage {
 	}
 	
 	public void clickBestSellersLinkBtn() {
-		BrowserUtils.waitForClickablility(bestSellersLinkBtn, 10);
+		BrowserUtils.waitForVisibility(bestSellersLinkBtn, 15);
 		bestSellersLinkBtn.click();
 	}
 	

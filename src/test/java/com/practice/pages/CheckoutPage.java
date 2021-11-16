@@ -42,7 +42,7 @@ public class CheckoutPage {
 	}
 	
 	public void deleteAllItems() {
+		BrowserUtils.waitForClickablility(deleteItemBtn, 10);
 		deleteItemBtn.click();
-		BrowserUtils.waitForPageToLoad(15);
 	}
 }

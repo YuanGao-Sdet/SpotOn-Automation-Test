@@ -36,18 +36,20 @@ public class SpotonAuotmationTest extends testBase{
 		
 //		•	Navigate to the Bestsellers section and sort by highest to lowest price
 		homePage.clickBestSellersLinkBtn();
-		searchResultPage.sortByText("Price: Highest first");
+		searchResultPage.sortByText("price:desc");
 		Assert.assertTrue(searchResultPage.checkItemPriceHightToLow());
 		
 //		•	Navigate to the Contact Us section and send a message. Check form validation.
+		homePage.clickContactUsLinkBtn();
 		Faker faker = new Faker();
 		String validEmail = faker.internet().emailAddress();
 		String invalidEml = faker.internet().emailAddress().replace('@', 'e');
 		String message = faker.address().fullAddress();
 		
+		
 		contactUsPage.selectHeading("Customer service").enterEmailAddress(invalidEml).typeMessage(message).clickSendBtn();
 		contactUsPage.checkinvalidEmailAddErrorMessage();
-		contactUsPage.reEnterEmail(validEmail).uploadFileinto("src\\test\\resources\\SpotOnImage.jpg").clickSendBtn();
+		contactUsPage.reEnterEmail(validEmail).uploadFileinto("src/test/resources/SpotOnImage.jpg").clickSendBtn();
 		
 		
 	}

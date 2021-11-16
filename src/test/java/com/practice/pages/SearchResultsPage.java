@@ -27,7 +27,7 @@ public class SearchResultsPage {
 	@FindBy(css = "a[title='Add to cart']")
 	public WebElement add_to_cart_button;
 
-	@FindBy(id = "selectProductSort")
+	@FindBy(css = "#selectProductSort")
 	public WebElement sortByElement;
 	
 	@FindBy(css = "a[title='Proceed to checkout']")
@@ -53,6 +53,7 @@ public class SearchResultsPage {
 	public void sortByText(String text) {
 		Select select = new Select(sortByElement);
 		select.selectByValue(text);
+//		select.selectByIndex(2);
 	}
 	
 	public void addItemToCart() {
