@@ -45,4 +45,5 @@ public class CheckoutPage {
 		BrowserUtils.waitForClickablility(deleteItemBtn, 10);
 		deleteItemBtn.click();
 	}
+
 }
