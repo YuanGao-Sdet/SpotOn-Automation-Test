@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import com.practice.utils.BrowserUtils;
 import com.practice.utils.Driver;
-
+   // this is testing for push code to github !
 public class ContactUsPage {
 	public ContactUsPage() {
 		PageFactory.initElements(Driver.getDriver(), this);
@@ -34,7 +34,7 @@ public class ContactUsPage {
 	
 	@FindBy(css = "p[class='alert alert-success']")
 	public WebElement successSentMsg;
-	
+
 	public ContactUsPage selectHeading(String str) {
 		Select select = new Select(selectSubJectHeading);
 		select.selectByVisibleText(str);
