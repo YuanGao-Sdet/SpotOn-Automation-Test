@@ -55,7 +55,9 @@ public class SpotonAuotmationTest extends testBase{
 		contactUsPage.reEnterEmail(validEmail)
 						.uploadFileinto("\\src\\test\\resources\\SpotOnImage.jpg")
 						.clickSendBtn().checkSuccessMessageSent();
-		
-		
+
 	}
+
+
+
 }
