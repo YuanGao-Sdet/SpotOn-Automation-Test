@@ -5,6 +5,5 @@ public class Orderpage {
         System.out.println("this is the code from niki ");
         System.out.println(" HEY, WILL BE CONFLICTS ");
         System.out.println("practice on my code day 2");
-
     }
 }
