@@ -26,6 +26,9 @@ public class HomePage {
 
 	@FindBy(linkText = "Contact us")
 	public WebElement contactUsLinkBtn;
+
+	@FindBy(linkText = "fake element locator")
+	public WebElement fakeElement;
 	
 	public void searchItem(String item) {
 		search.sendKeys(item);
