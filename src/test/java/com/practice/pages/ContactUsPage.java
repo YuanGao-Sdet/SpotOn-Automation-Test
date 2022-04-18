@@ -88,6 +88,8 @@ public class ContactUsPage {
 		successSentMsg.isDisplayed();
 		return this;
 	}
+
+
 	
 	
 	

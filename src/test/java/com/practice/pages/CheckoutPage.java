@@ -46,4 +46,5 @@ public class CheckoutPage {
 		deleteItemBtn.click();
 		System.out.println("testetste");
 	}
+
 }
