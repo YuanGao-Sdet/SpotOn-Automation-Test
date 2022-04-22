@@ -1,3 +1,2 @@
 this is a a.txt.
 hello,world.
-welcome to NYC
